@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { CadastroService } from '../services/cadastro.service';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class CadastroComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private http: HttpClient
+    private cadastro : CadastroService
     ) { }
 
   
@@ -32,9 +33,7 @@ export class CadastroComponent implements OnInit {
   }
 
   onSubmit() {
-    this.http
-    .post('http://api.template.megaleios.com/api/v1/Profile/Register', JSON.stringify(this.form.value))
-    .subscribe()
+    this.cadastro.Criar(this.form.value);
   }
 
 }

@@ -10,6 +10,7 @@ import { ListService } from './services/list.service';
 import { LoginServiceService } from './services/login-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { CadastroService } from './services/cadastro.service';
 import { from } from 'rxjs';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { from } from 'rxjs';
   ],
   providers: [ 
       ListService,
+      CadastroService,
       LoginServiceService,
     ],
   bootstrap: [AppComponent]
