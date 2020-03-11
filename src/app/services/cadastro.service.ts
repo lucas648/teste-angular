@@ -10,7 +10,7 @@ export class CadastroService {
 
   Criar (user) {
     this.http
-    .post('http://api.template.megaleios.com/api/v1/Profile/Register', JSON.stringify(user))
+    .post(this.userUrl, JSON.stringify(user))
     .subscribe()
   }
 }
