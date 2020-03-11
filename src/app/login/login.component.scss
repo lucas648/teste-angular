@@ -13,8 +13,11 @@
     &-button { 
       display: flex;
       position: relative;
-      width: 100px;
-      cursor: pointer;
+      padding: 16px;
       justify-content: center;
+      
+      &-submit {
+        margin-right: 16px;
+      }
     }
 }
