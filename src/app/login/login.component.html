@@ -1,8 +1,9 @@
-<div class="login-container">
+<form [formGroup]="form" (ngSubmit)="onSubmit()"></form>
+  <div class="login-container" >
     <h1 class="login-title">Login</h1>
       <div class="login-name">
         <label 
-          for="name" 
+        formControlName="name" 
           class="login-name-label"
         >
           Nome
@@ -21,16 +22,27 @@
          Senha 
         </label>
         <input 
-          name="password" 
+          formControlName="password" 
           type="password" 
           class="login-name-password-input"
         >
       </div>
   
-      <button 
-        class="login-button"
-        type="submit"
-      > 
-        Entrar
-      </button>
+      <div class="login-button">
+        <button 
+          class="login-button-submit"
+          type="submit"
+        > 
+          Entrar
+        </button>
+        <button 
+          class="cadastrar-button-cadastrar"
+          type="button"
+          onclick="cadastrar()"
+        > 
+          Entrar
+        </button>
+      </div>
   </div>
+</form>
+    
