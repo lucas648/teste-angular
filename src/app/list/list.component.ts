@@ -18,5 +18,4 @@ export class ListComponent implements OnInit {
   listar() {
     this.listservice.listar().subscribe(dados => this.itens = dados);
   }
-
 }
