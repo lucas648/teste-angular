@@ -11,7 +11,7 @@ import { LoginServiceService } from './services/login-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CadastroService } from './services/cadastro.service';
-import { from } from 'rxjs';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { from } from 'rxjs';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    routing
   ],
   providers: [ 
       ListService,
