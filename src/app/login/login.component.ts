@@ -18,13 +18,14 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
 
     this.loginForm = this.fb.group({
-      name: [null,Validators.required],
+      login: [null,Validators.required],
       password: [null,Validators.required]
     });
   }
 
   onSubmit() {
     this.login.Criar(this.loginForm.value);
+    console.log(this.loginForm.value);
   }
 
   cadastar() {
