@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CadastroService {
-  userUrl = 'http://api.template.megaleios.com/api/v1/Profile/List?limit=30';
+  userUrl = 'http://api.template.megaleios.com/api/v1/Profile/Register';
   constructor(private http: HttpClient) { }
 
   Criar (user) {

@@ -27,8 +27,8 @@ export class CadastroComponent implements OnInit {
       fullname: [null, [Validators.required]],
       login: [null, [Validators.required, Validators.minLength(5),Validators.maxLength(15)]],
       email: [null, [Validators.required,Validators.email]],
-      cpf: [null,Validators.required,Validators.minLength(11),Validators.maxLength(11)],
-      phone:[null, Validators.required,Validators.minLength(10),Validators.maxLength(11)]
+      cpf: [null,Validators.required],
+      phone:[null, Validators.required]
     });
   }
 
