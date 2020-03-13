@@ -1,23 +1,24 @@
 .login {
-    
-    &-title {
-     
-    }
     &-container {
+      margin: 0 auto;
       padding: 16px; 
-      width: 300px;
+      width: 50%;
+      background-color: #6495ED;
     }
     &-name,&-password {
         padding: 16px;
+
+        &-input, &-password-input {
+          position: relative;
+          width: 200px;
+        }
     }
     &-button { 
       display: flex;
       position: relative;
       padding: 16px;
+      margin: 0 auto;
+      left: 0;
       justify-content: center;
-      
-      &-submit {
-        margin-right: 16px;
-      }
     }
 }

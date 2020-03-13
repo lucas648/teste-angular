@@ -1,37 +1,37 @@
 <form class="cadastro-form" [formGroup]="form" (ngSubmit)="onSubmit()">
-  <div class="cadastro-password">
+  <div class="cadastro-form-item">
     <label for="password">Digite sua Senha: </label>  
     <input formControlName="password" type="text" placeholder="Digite uma senha">
   </div>
-  <div class="cadastro-name">
+  <div class="cadastro-form-item">
     <label for="fullname">Digite seu nome completo: </label>  
     <input 
       formControlName="fullname" 
       type="text" 
       placeholder="digite seu nome completo">
   </div>
-  <div class="cadastro-login">
+  <div class="cadastro-form-item">
     <label for="login">Digite seu login: </label>  
     <input 
       formControlName="login" 
       type="text" 
       placeholder="Digite um Login(de 5 a 15 caracteres)">
   </div>
-  <div class="cadastro-email">
+  <div class="cadastro-form-item">
     <label for="email">Digite seu e-mail: </label>  
     <input 
       formControlName="email"
       type="text" 
       placeholder="Digite seu email">
   </div>
-  <div class="cadastro-cpf">
+  <div class="cadastro-form-item">
     <label for="cpf">Digite seu CPF: </label>  
     <input 
       formControlName="cpf" 
       type="text" 
       placeholder="Digite seu CPF">
   </div>
-  <div class="cadastro-phone">
+  <div class="cadastro-form-item">
     <label for="phone">Digite seu telefone: </label>  
     <input 
       formControlName="phone" 
