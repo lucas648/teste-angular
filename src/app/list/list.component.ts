@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ListService } from '../services/list.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -26,7 +25,6 @@ export class ListComponent implements OnInit {
       (res:any) => {
       if (res && !res.erro) {
         this.itens = res.data;
-        console.log(this.itens);
       } else {
         alert('Usuário não autorizado')
       }
