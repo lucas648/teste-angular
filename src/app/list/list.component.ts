@@ -30,6 +30,5 @@ export class ListComponent implements OnInit {
         alert('Usuário não autorizado')
       }
     });
-  
   }
 }
