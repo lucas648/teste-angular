@@ -25,7 +25,8 @@ export class ListComponent implements OnInit {
     .subscribe(
       (res:any) => {
       if (res && !res.erro) {
-        dados => this.itens = dados
+        this.itens = res.data;
+        console.log(this.itens);
       } else {
         alert('Usuário não autorizado')
       }

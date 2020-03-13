@@ -1,5 +1,11 @@
 .home-app {
   margin: 0 auto;
+  padding: 16px;
   width: 100%;
   height: 100%;
+  align-items: center;
+  &-button{
+    padding: 16px;
+    display: grid;
+  }
 }
