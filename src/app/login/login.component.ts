@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       (res:any) => {
       if (res && !res.erro) {
         this.route.navigate(['/lista'])
-        window.sessionStorage.setItem('token', res.data.acesstoken);
+        window.sessionStorage.setItem('token', res.data.access_token);
       } else {
         alert('entre com um usuário válido')
       }

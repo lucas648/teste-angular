@@ -30,7 +30,6 @@ export class ListComponent implements OnInit {
         alert('Usuário não autorizado')
       }
     });
-    this.listservice.listar().subscribe(dados => this.itens = dados);
   
   }
 }
