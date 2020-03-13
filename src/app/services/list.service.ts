@@ -7,21 +7,18 @@ import { LoginServiceService } from './login-service.service';
 export class ListService {
   
   listUrl = 'http://api.template.megaleios.com/api/v1/Profile/List?limit=30';
-  httpOptions = {
-    headers: new HttpHeaders({
-      'Authorization': 'Bearer ' +  this.user.res
-    })
-  }
+
   constructor(
     private http: HttpClient,
     private user: LoginServiceService
   ) { }
 
-  getToken() {
-    return localStorage.getItem('token');
-  }
-  
-  listar () {
-    return this.http.get<any[]>(`${this.listUrl}`, this.httpOptions);
+  listar (token) {
+    let httpOptions = {
+      headers: new HttpHeaders({
+        'Authorization': `Bearer ${token}`
+      })
+    }
+    return this.http.get<any[]>(`${this.listUrl}`,{headers: httpOptions.headers});
   }
 }

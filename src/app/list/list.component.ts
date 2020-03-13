@@ -19,12 +19,13 @@ export class ListComponent implements OnInit {
   }
 
   listar() {
-    this.listservice.listar()
+    
+    let token = window.sessionStorage.getItem('token')
+    this.listservice.listar(token)
     .subscribe(
       (res:any) => {
       if (res && !res.erro) {
         dados => this.itens = dados
-        window.localStorage.getItem('token');
       } else {
         alert('Usuário não autorizado')
       }
