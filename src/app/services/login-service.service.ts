@@ -17,6 +17,7 @@ export class LoginServiceService {
   Criar(user) {
     return this.http
     .post(this.loginUrl, JSON.stringify(user), this.httpOptions);
+    
   }
 
 }

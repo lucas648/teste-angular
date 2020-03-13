@@ -29,13 +29,15 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.login.Criar(this.loginForm.value)
     .subscribe(
-      (res) => {
+      (res:any) => {
       if (res && !res.erro) {
         this.route.navigate(['/lista'])
+        window.localStorage.setItem('token', res.data.acesstoken);
       } else {
         alert('entre com um usuário válido')
       }
     });
-    console.log(this.loginForm.value);
+    
+    
   }
 }
