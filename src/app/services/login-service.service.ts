@@ -11,11 +11,12 @@ export class LoginServiceService {
       'Content-Type': 'application/json'
     })
   }
+  res
   constructor(private http: HttpClient) { }
 
   Criar(user) {
-    this.http
-    .post(this.loginUrl, JSON.stringify(user), this.httpOptions)
-    .subscribe()
+    return this.http
+    .post(this.loginUrl, JSON.stringify(user), this.httpOptions);
   }
+
 }

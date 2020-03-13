@@ -1,6 +1,7 @@
 import { LoginServiceService } from './../services/login-service.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,9 +11,11 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class LoginComponent implements OnInit {
 
   loginForm : FormGroup
+
   constructor(
     private fb: FormBuilder,
-    private login: LoginServiceService
+    private login: LoginServiceService,
+    private route: Router
   ) { }
 
   ngOnInit() {
@@ -24,11 +27,15 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    this.login.Criar(this.loginForm.value);
+    this.login.Criar(this.loginForm.value)
+    .subscribe(
+      (res) => {
+      if (res && !res.erro) {
+        this.route.navigate(['/lista'])
+      } else {
+        alert('entre com um usuário válido')
+      }
+    });
     console.log(this.loginForm.value);
-  }
-
-  cadastar() {
-    
   }
 }

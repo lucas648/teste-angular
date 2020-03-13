@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { CadastroService } from '../services/cadastro.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,8 @@ export class CadastroComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private cadastro : CadastroService
+    private cadastro : CadastroService,
+    private router: Router
     ) { }
 
   
@@ -34,6 +36,7 @@ export class CadastroComponent implements OnInit {
 
   onSubmit() {
     this.cadastro.Criar(this.form.value);
+    this.router.navigate(['/login']);
   }
 
 }

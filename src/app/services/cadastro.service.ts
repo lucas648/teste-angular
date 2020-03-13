@@ -8,7 +8,8 @@ export class CadastroService {
   userUrl = 'http://api.template.megaleios.com/api/v1/Profile/Register';
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+
     })
   }
   constructor(private http: HttpClient) { }
