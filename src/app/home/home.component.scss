@@ -1,13 +1,29 @@
 .home-app {
+  position: relative;
+  width: 698px;
+  height: 422px;
   margin-top: 150px;
-  padding: 16px;
-  width: 100%;
   background-color: #00FFFF;
   &-title {
-    padding: 16px;
+    position: absolute;
+    width: 318px;
+    height: 28px;
+    left: 185px;
+    top: 11px;
   }
-  &-button{
-    padding: 16px;
-    display: grid;
+  &-button-login{
+    position: absolute;
+    width: 528px;
+    height: 62px;
+    left: 79px;
+    top: 150px;
+  }
+
+  &-button-cadastrar {
+    position: absolute;
+    width: 527px;
+    height: 66px;
+    left: 79px;
+    top: 256px;
   }
 }
