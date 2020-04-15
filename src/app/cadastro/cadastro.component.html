@@ -1,42 +1,91 @@
 <form class="cadastro-form container-fluid" [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="cadastro-form-item">
-    <label for="password"> Senha: </label>  
-    <input formControlName="password" type="text" placeholder="Digite uma senha">
+    <label 
+      class="cadastro-form-item-label" 
+      for="password"> 
+      Senha: 
+    </label>  
+    <input 
+      class="cadastro-form-item-input" 
+      formControlName="password" 
+      type="text" 
+      placeholder="Digite uma senha"
+    />
   </div>
   <div class="cadastro-form-item">
-    <label for="fullname"> Nome: </label>  
-    <input 
+    <label 
+      class="cadastro-form-item-label"
+      for="fullname"
+    > 
+      Nome: 
+    </label>  
+    <input
+      class="cadastro-form-item-input"
       formControlName="fullname" 
       type="text" 
-      placeholder="digite seu nome completo">
+      placeholder="digite seu nome completo"
+    />
   </div>
   <div class="cadastro-form-item">
-    <label for="login"> Login: </label>  
-    <input 
+    <label 
+      class="cadastro-form-item-label"
+      for="login"
+    > 
+      Login: 
+    </label>  
+    <input
+      class="cadastro-form-item-input"
       formControlName="login" 
       type="text" 
-      placeholder="Digite um Login(de 5 a 15 caracteres)">
+      placeholder="Digite um Login(de 5 a 15 caracteres)"
+    />
   </div>
   <div class="cadastro-form-item">
-    <label for="email"> E-mail: </label>  
+    <label 
+      class="cadastro-form-item-label"
+      for="email"
+    > 
+      E-mail: 
+    </label>  
     <input 
+      class="cadastro-form-item-input"
       formControlName="email"
       type="text" 
-      placeholder="Digite seu email">
+      placeholder="Digite seu email"
+    />
   </div>
   <div class="cadastro-form-item">
-    <label for="cpf"> CPF: </label>  
+    <label 
+      class="cadastro-form-item-label" 
+      for="cpf"
+    > 
+      CPF: 
+    </label>  
     <input 
+      class="cadastro-form-item-input"
       formControlName="cpf" 
       type="text" 
-      placeholder="Digite seu CPF">
+      placeholder="Digite seu CPF"
+    />
   </div>
   <div class="cadastro-form-item">
-    <label for="phone"> Telefone: </label>  
+    <label 
+      class="cadastro-form-item-label" 
+      for="phone"
+    > 
+      Telefone: 
+    </label>  
     <input 
+      class="cadastro-form-item-input"
       formControlName="phone" 
       type="text" 
-      placeholder="Digite seu telefone">
+      placeholder="Digite seu telefone"
+    />
   </div>
-  <button type="submit" class="cadastro-button">Enviar</button>
+  <button
+    type="submit" 
+    class="cadastro-form-button"
+  >
+    Enviar
+  </button>
 </form>
