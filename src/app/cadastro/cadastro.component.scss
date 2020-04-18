@@ -1,11 +1,6 @@
 .cadastro-form {
-  border-radius: 5px;
   width: 847px;
   height: 510px;
-  padding: 16px;
-  left: 246px;
-  top: 86px;
-  margin-top: 80px;
   background-color: #87CEEB;
   &-item {
     padding: 32px;
@@ -18,14 +13,10 @@
     &-input {
       margin-left: 32px;
       width: 332px;
-      height: 34px;
     }
   }
   &-button {
-    width: 179px;
-    height: 42px;
-    margin-top: 16px;
-    margin-left: 155px;
+     margin-top: 16px;
   }
 }
 

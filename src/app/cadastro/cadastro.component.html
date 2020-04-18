@@ -1,4 +1,4 @@
-<form class="cadastro-form container-fluid" [formGroup]="form" (ngSubmit)="onSubmit()">
+<form class="cadastro-form container-fluid box-padrao" [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="cadastro-form-item">
     <label 
       class="cadastro-form-item-label" 
@@ -6,7 +6,7 @@
       Senha: 
     </label>  
     <input 
-      class="cadastro-form-item-input" 
+      class="cadastro-form-item-input app-input" 
       formControlName="password" 
       type="text" 
       placeholder="Digite uma senha"
@@ -20,7 +20,7 @@
       Nome: 
     </label>  
     <input
-      class="cadastro-form-item-input"
+      class="cadastro-form-item-input app-input"
       formControlName="fullname" 
       type="text" 
       placeholder="digite seu nome completo"
@@ -34,7 +34,7 @@
       Login: 
     </label>  
     <input
-      class="cadastro-form-item-input"
+      class="cadastro-form-item-input app-input"
       formControlName="login" 
       type="text" 
       placeholder="Digite um Login(de 5 a 15 caracteres)"
@@ -48,7 +48,7 @@
       E-mail: 
     </label>  
     <input 
-      class="cadastro-form-item-input"
+      class="cadastro-form-item-input app-input"
       formControlName="email"
       type="text" 
       placeholder="Digite seu email"
@@ -62,7 +62,7 @@
       CPF: 
     </label>  
     <input 
-      class="cadastro-form-item-input"
+      class="cadastro-form-item-input app-input"
       formControlName="cpf" 
       type="text" 
       placeholder="Digite seu CPF"
@@ -76,7 +76,7 @@
       Telefone: 
     </label>  
     <input 
-      class="cadastro-form-item-input"
+      class="cadastro-form-item-input app-input"
       formControlName="phone" 
       type="text" 
       placeholder="Digite seu telefone"
@@ -84,7 +84,7 @@
   </div>
   <button
     type="submit" 
-    class="cadastro-form-button"
+    class="cadastro-form-button app-button"
   >
     Enviar
   </button>

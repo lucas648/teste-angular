@@ -2,11 +2,6 @@
     &-container {
       width: 564px;
       height: 368px;
-      left: 145px;
-      top: 94px;
-      margin-top: 100px;
-      padding: 32px; 
-      border-radius: 5px;
       background-color: #6495ED;
 
     }
@@ -29,14 +24,6 @@
         &-input, &-password-input {
           margin: 16px;
           width: 258px;
-          height: 35px;
         }
-    }
-    &-button-submit { 
-      width: 179px;
-      height: 42px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
     }
 }
